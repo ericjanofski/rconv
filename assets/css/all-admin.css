@@ -1,0 +1,113 @@
+.custom-panel #filter-bar {
+  overflow: auto;
+  margin-bottom: 20px;
+}
+
+.custom-panel #filter-bar #filters {
+  float: left;
+}
+
+.custom-panel .refresh {
+  background: #fff;
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  top: 8px;
+  margin-left: 18px;
+  padding: 3px;
+  border: 1px solid #333;
+  border-radius: 3px;
+}
+
+.custom-panel .refresh img {
+  opacity: .5;
+  width: 100%;
+}
+
+.custom-panel .refresh:hover img {
+  opacity: .7;
+}
+
+.custom-panel #search {
+  float: right;
+  position: relative;
+  top: 7px;
+}
+
+.custom-panel #search input {
+  margin-left: 5px;
+}
+
+#message {
+  position: absolute;
+  top: 10px;
+  font-weight: bold;
+  left: 50%;
+  margin-left: -20px;
+  color: green;
+}
+
+.custom-panel td {
+  height: 55px;
+}
+
+.custom-panel td, .custom-panel th {
+  width: 100px;
+  max-width: 100px;
+}
+
+.custom-panel td.image, .custom-panel th.image {
+  width: 70px;
+  max-width: 70px;
+}
+
+.custom-panel .image img {
+  width: 100%;
+}
+
+.custom-panel td.title, .custom-panel th.title {
+  width: 30%;
+}
+
+.custom-panel tfoot tr td {
+  font-weight: bold;
+}
+
+.top-pager {
+  margin-bottom: 20px;
+}
+
+.pagination {
+  position: relative;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.pagination span, .pagination a, .pagination a:visited {
+  padding: 0 4px;
+  font-size: 15px;
+  color: #777;
+}
+
+.pagination a, .pagination a:visited {
+  display: inline-block;
+  color: #333;
+  text-align: center;
+  z-index: 2;
+}
+
+.pagination .previous {
+  margin-right: 15px;
+}
+
+.pagination .detail {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  display: block;
+  top: 18px;
+  z-index: 1;
+}
+

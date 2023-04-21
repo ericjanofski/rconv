@@ -1,0 +1,14 @@
+/* To enable this file, include the admin_css.php file in the functions file
+------------------------------------------------------------ */
+
+.wp-admin #menu-main-menu {
+  display: none;
+}
+
+#logo {
+  display: none;
+}
+
+tr.acf-row > td, tr.acf-row > td + td {
+  border-top: 1px solid #aaa !important;
+} 

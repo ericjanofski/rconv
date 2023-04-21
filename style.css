@@ -1,0 +1,130 @@
+/*
+Theme Name: appcms
+Author: Eric Janofski
+Description: HTML5 client theme
+Version: 1.0
+
+  font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+
+*/
+
+/* BASE FONT STYLES
+------------------------------------------------------------ */
+body,
+h1,
+h2,
+h2 a,
+h2 a:visited,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+label,
+select,
+textarea,
+ul,
+li,
+ol {
+  font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+	font-size: 16px;
+	line-height: 1.3em;
+	color: #333;
+}
+
+/* LINKS
+------------------------------------------------------------ */
+a, a:visited {
+}
+
+/* BODY
+------------------------------------------------------------ */
+body, html {
+	background: #005daa;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+#branding {
+    background-color: #005daa;
+    padding: 50px;
+    text-align: center;
+}
+
+#branding img {
+    width: 240px;
+    margin: 0 auto;
+}
+
+#body {
+    background: #eeeeee;
+    padding: 50px 0;
+}
+
+p {
+    color: #393939;
+    font-size: 18px;
+    line-height: 1.4em;
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+p a, p a:visited {
+    color: #393939;
+}
+
+.pledge p {
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-style: italic;
+}
+
+.line p {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#footer {
+    padding: 60px 0 80px;
+}
+
+.social {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.social .a2a_button_facebook, .social .a2a_button_twitter {
+    background: url(/images/facebook.jpg) no-repeat;
+    background-size: contain;
+    width: 240px;
+    height: 42px;
+    margin: 0 10px 10px;
+    float: none;
+    display: inline-block;
+    vertical-align: text-top;
+  }
+  
+.social .a2a_button_twitter {
+    background-image: url(/images/twitter.jpg);
+}
+  
+.social a svg, .social a span {
+    display: none !important;
+}
+
+.line-white {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.email-footer p {
+    text-align: center;
+    color: #fff;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.email-footer a, .email-footer a:visited {
+    color: #fff;
+}

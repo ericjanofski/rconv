@@ -1,0 +1,62 @@
+/* Description: Site Layout */
+
+/* Structure
+------------------------------------------------------------ */
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#primary {
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+#primary.full-width {
+	width: auto;
+	float: none;
+}
+
+#main #secondary {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+#colophon {
+	clear: both;
+}
+
+/* Increase the size of the content area for templates without sidebars */
+.full-width #content,
+.image-attachment #content,
+.error404 #content {
+	margin: 0;
+}
+
+
+/* Responsive Design
+------------------------------------------------------------ */
+
+@media only screen and (max-width: 740px) {
+
+	.container {
+		width: auto;
+		margin: 0 20px;
+	}
+	
+	#main .widget .align-left, #main .widget .align-right {
+		float: none;
+		clear: both;
+		margin-bottom: 10px;
+	}
+
+} @media only screen and (max-width: 700px) {
+  
+	#main #primary, #main #secondary {
+		width: auto;
+		float: none;
+		clear: both;
+	}
+	
+}

@@ -1,0 +1,140 @@
+/* To enable this file, include the admin_css.php file in the functions file
+------------------------------------------------------------ */
+
+body, h1, h2, h2 a, h2 a:visited, h3, h4, h5, h6, p, input, label, select, textarea, ul, li, ol {
+  -webkit-font-smoothing: antialiased !important;
+}
+
+#adminmenuback, #adminmenuwrap, #wpadminbar,
+#wpfooter, #dashboard-widgets-wrap,
+#event_tribe_venue, #event_tribe_organizer, #event_url, #event_cost, .tribe-has-recurrence-rule tr.tribe-recurrence-exclusion-row, .tribe-has-recurrence-rule tr.tribe-recurrence-description, .post-type-tribe_events #wpfooter, #tribe_events_cat-adder, #tribe_events_cat-tabs, #preview-action, .misc-pub-visibility, #minor-publishing, #tribe_events_event_details h2, #tribe_events_event_details button.handlediv, #wp-content-wrap, #postdivrich, #edit-slug-box, #contextual-help-link, #postexcerpt, #commentstatusdiv, #commentsdiv, #slugdiv, #authordiv, #postimagediv, #tribe_events_event_options, #tagsdiv-post_tag, #revisionsdiv, #tribe_events_catdiv, .tribe-change-timezone, .tribe-allday, .tribe-datetime-block .tribe-field-end_date, #wpbody .view-switch, .wp_attachment_details, .media-types-required-info, #imgedit-open-btn-42, #screen-meta-links, .postbox-container .toggle-indicator,
+.postbox select.postform, .postbox #anonymous-adder,
+.term-slug-wrap, .term-parent-wrap, .term-description-wrap,  #relevanssi_hidebox,
+.taxonomy-society_levels.edit-tags-php #addtag, .taxonomy-legacy_societies.edit-tags-php #addtag, #s3-actions,
+.shortpixel-offer, .media_page_enable-media-replace-enable-media-replace .replace_type, .media_page_enable-media-replace-enable-media-replace .options.wrapper,
+.postbox .taxonomy-add-new, #message.updated a, .row-actions .view,
+.post-type-app_user .page-title-action, .post-type-app_user .top .tablenav-pages {
+  display: none !important;
+}
+
+#titlediv #title {
+    font-size: 16px;
+}
+
+.post-type-app_user td.title a, .post-type-app_user td.title {
+    padding: 15px 5px !important;
+}
+
+.post-type-app_user .search-box {
+    position: relative;
+    top: 50px;
+}
+
+/* .post-type-app_user td.title a, .post-type-app_user td.title a:visited {
+    cursor: default;
+    color: #333;
+    padding-left: 10px;
+} */
+
+@media screen and (max-width: 782px) {
+    .post-type-app_user .search-box {
+        position: static;
+    }
+}
+
+.categorydiv div.tabs-panel {
+    max-height: 400px;
+}
+
+.media_page_enable-media-replace-enable-media-replace .editor-wrapper {
+    width: 100%;
+}
+
+.recurrence-row.tribe-datetime-block .tribe-field-end_date {
+  display: block;
+}
+
+#wpwrap #wpcontent, #wpwrap #wpfooter {
+  margin-left: 0;
+  padding: 0;
+}
+
+html.wp-toolbar {
+  padding: 0;
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+  width: 1.75em !important;
+}
+
+#wpbody {
+  max-width: 1200px;
+  margin: 15px auto;
+  clear: both;
+}
+
+#wpbody .wrap {
+  margin: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#poststuff {
+  margin-top: 20px;
+}
+
+.post-type-tribe_events #message.notice-success p a {
+  display: none;
+}
+
+#wpbody-content .wp-list-table {
+  margin-top: 20px;
+}
+
+.post-type-tribe_events #wpbody #title-prompt-text {
+  position: static;
+  width: 100%;
+  clip: unset;
+  height: auto;
+  -webkit-clip-path: unset;
+  display: block;
+  padding-left: 0;
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  display: none;
+  margin-top: 15px;
+}
+
+.post-type-tribe_events #wpbody .description {
+  margin: 2px 0 7px;
+  font-size: 12px;
+}
+
+#wpbody .wp-filter .actions {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+#screen-meta-links {
+  margin: 0;
+  position: absolute;
+  right: 20px;;
+  top: -39px;
+}
+
+#contextual-help-link-wrap, #screen-options-link-wrap {
+  border: 0;
+  margin: 0;
+}
+
+td.column-title strong, td.plugin-title strong {
+  font-size: 12px;
+}
+
+.acf-actions {
+  text-align: left;
+}
