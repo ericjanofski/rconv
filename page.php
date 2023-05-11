@@ -16,6 +16,9 @@ if(get_post_type( get_field('pledge', $id) ) == 'custom_pledge') {
     $pledge_email_body = get_field('email_body', get_field('pledge', $id));
 }
 
+$email_body_bottom = get_field('email_body_bottom', 'options');
+
+
 // $facebook_description = get_field('facebook_share_text', 'options') . ' \"' . $pledge_text . '\"';
 // $twitter_description = get_field('twitter_share_text', 'options') . ' \"' . $pledge_text . '\"';
 $facebook_description = get_field('facebook_share_text', 'options');
@@ -30,16 +33,15 @@ $twitter_description = get_field('twitter_share_text', 'options');
         <div class="pledge">
             <p>"<?php echo $pledge_text; ?>"</p>
         </div>
-        
-        <div class="line">
-            <p><img src="/images/line.jpg" /></p>
-        </div>
 
         <?php if($pledge_email_body != '') : ?>
             <div class="email-body">
                 <p><?php echo $pledge_email_body; ?></p>
             </div>
         <?php endif; ?>
+
+        <?php echo $email_body_bottom; ?>
+
     </div>
 </div>
 
@@ -64,7 +66,7 @@ $twitter_description = get_field('twitter_share_text', 'options');
             <script async src="https://static.addtoany.com/menu/page.js"></script>
         </div>
         <div class="line-white">
-            <p><img style="border:none;outline:none;width:220px;margin-left:auto;margin-right:auto;" src="/images/line-white.jpg" /></p>
+            <p><img style="border:none;outline:none;width:220px;margin-left:auto;margin-right:auto;" src="/images/line.png" /></p>
         </div>
         
         <div class="email-footer">

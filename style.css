@@ -28,7 +28,7 @@ ul,
 li,
 ol {
   font-family: 'Open Sans',Arial,Helvetica,sans-serif;
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 1.3em;
 	color: #333;
 }
@@ -41,12 +41,12 @@ a, a:visited {
 /* BODY
 ------------------------------------------------------------ */
 body, html {
-	background: #005daa;
+	background: #30353e;
 	-webkit-font-smoothing: subpixel-antialiased;
 }
 
 #branding {
-    background-color: #005daa;
+    background-color: #30353e;
     padding: 50px;
     text-align: center;
 }
@@ -57,12 +57,12 @@ body, html {
 }
 
 #body {
-    background: #eeeeee;
+    background: #ffffff;
     padding: 50px 0;
 }
 
 p {
-    color: #393939;
+    color: #405465;
     font-size: 18px;
     line-height: 1.4em;
     font-family: 'Open Sans', Arial, sans-serif;
@@ -70,14 +70,15 @@ p {
 }
 
 p a, p a:visited {
-    color: #393939;
+    color: #405465;
 }
 
 .pledge p {
-    font-size: 22px;
+    font-size: 32px;
     margin-bottom: 25px;
     text-align: center;
     font-style: italic;
+    font-weight: bold;
 }
 
 .line p {
@@ -94,19 +95,37 @@ p a, p a:visited {
     text-align: center;
 }
 
+.social .a2a_kit {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social .a2a_kit a {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .social .a2a_kit {
+        flex-wrap: wrap;
+    }
+}
+
 .social .a2a_button_facebook, .social .a2a_button_twitter {
-    background: url(/images/facebook.jpg) no-repeat;
+    background: url(/images/facebook.png) no-repeat center center;
     background-size: contain;
     width: 240px;
-    height: 42px;
-    margin: 0 10px 10px;
+    height: 50px;
     float: none;
-    display: inline-block;
-    vertical-align: text-top;
+    display: block;
+  }
+
+  .social div {
+    display: none;
   }
   
 .social .a2a_button_twitter {
-    background-image: url(/images/twitter.jpg);
+    background-image: url(/images/twitter.png);
 }
   
 .social a svg, .social a span {
@@ -119,7 +138,7 @@ p a, p a:visited {
 }
 
 .email-footer p {
-    text-align: center;
+    text-align: left;
     color: #fff;
     font-style: italic;
     font-size: 16px;
