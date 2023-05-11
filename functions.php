@@ -34,7 +34,7 @@ function appcms_add_theme_scripts() {
   wp_enqueue_script( 'main', get_stylesheet_directory_uri() . '/assets/js/main.js', array ( 'jquery' ), '1.0', true);
 
 }
-add_action( 'wp_enqueue_scripts', 'appcms_add_theme_scripts', 100);
+add_action( 'wp_enqueue_scripts', 'appcms_add_theme_scripts', 10);
 
 // OPTIONS PAGE
 if( function_exists('acf_add_options_page') ) {
