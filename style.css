@@ -108,6 +108,7 @@ p a, p a:visited {
 }
 
 .social .a2a_button_facebook, .social .a2a_button_twitter {
+    background: url(/images/facebook.png) no-repeat center center;
     background-size: contain;
     width: 240px;
     height: 50px;
@@ -120,6 +121,7 @@ p a, p a:visited {
   }
   
 .social .a2a_button_twitter {
+    background-image: url(/images/twitter.png);
 }
   
 .social a svg, .social a span {
