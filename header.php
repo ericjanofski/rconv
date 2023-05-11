@@ -1,23 +1,23 @@
 <?php
 
-// $reroute = true;
-// if(get_the_ID() != 2 || !isset($_REQUEST['u'])) {
-//     //header("Location: " . "https://" .$_SERVER['HTTP_HOST'] . "/wp-admin");
-//     header("Location: https://www.rotary.org/en");
-//     exit;
-// }
+$reroute = true;
+if(get_the_ID() != 2 || !isset($_REQUEST['u'])) {
+    //header("Location: " . "https://" .$_SERVER['HTTP_HOST'] . "/wp-admin");
+    header("Location: https://www.rotary.org/en");
+    exit;
+}
 
-// // check for url variable
-// if(isset($_GET['u'])) {
-// 	$u_var = $_GET['u'];
-// 	if($u_var != '') $reroute = false;
+// check for url variable
+if(isset($_GET['u'])) {
+	$u_var = $_GET['u'];
+	if($u_var != '') $reroute = false;
 	
-// 	// unencode the id
-// 	$id = base64_decode($u_var) - 13810;
-//     $user = get_post($id);
-// }
+	// unencode the id
+	$id = base64_decode($u_var) - 13810;
+    $user = get_post($id);
+}
 
-// if($reroute) header("Location: https://www.rotary.org/en");
+if($reroute) header("Location: https://www.rotary.org/en");
 
 
 if(get_post_type( get_field('pledge', $id) ) == 'custom_pledge') {
