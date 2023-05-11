@@ -6,6 +6,7 @@
 
 get_header();
 
+$pledge_color = "#405465";
 if(get_post_type( get_field('pledge', $id) ) == 'custom_pledge') {
     $email_header = get_field('email_body_custom', 'options');
     $pledge_text = get_the_title(get_field('pledge', $id));
@@ -14,6 +15,12 @@ if(get_post_type( get_field('pledge', $id) ) == 'custom_pledge') {
     $email_header = get_field('email_header', 'options');
     $pledge_text = get_field('wall_text', get_field('pledge', $id));
     $pledge_email_body = get_field('email_body', get_field('pledge', $id));
+
+    $categories = get_the_terms(get_field('pledge', $id), "pledge_category");
+    if($categories) {
+        $cat = $categories[0];
+        $pledge_color = get_field('category_color', "pledge_category_" . $cat->term_id);
+    }
 }
 
 $email_body_bottom = get_field('email_body_bottom', 'options');
@@ -25,6 +32,12 @@ $facebook_description = get_field('facebook_share_text', 'options');
 $twitter_description = get_field('twitter_share_text', 'options');
 
  ?>
+ <style type="text/css">
+    .email-body p, .email-body a, .email-body a:visited, 
+    .pledge p, .pledge a, .pledge a:visited {
+        color: <?php echo $pledge_color; ?>;
+    }
+ </style>
 
 <div id="body">
     <div class="container">
