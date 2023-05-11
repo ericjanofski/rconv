@@ -34,6 +34,7 @@ function appcms_add_theme_scripts() {
   wp_enqueue_style( 'default', get_stylesheet_directory_uri() . '/assets/css/default.css',false,'1.0','all');  
   wp_enqueue_style( 'loaded', get_stylesheet_directory_uri() . '/assets/css/loaded-front-and-back.css',false,'1.0','all');  
   wp_enqueue_style( 'layout', get_stylesheet_directory_uri() . '/assets/css/layout.css',false,'1.0','all');  
+  wp_enqueue_style( 'front', get_stylesheet_directory_uri() . '/assets/css/front-end.css',false,'1.0','all');  
   wp_enqueue_style( 'style', get_stylesheet_uri() );
   wp_enqueue_script( 'main', get_stylesheet_directory_uri() . '/assets/js/main.js', array ( 'jquery' ), '1.0', true);
 
