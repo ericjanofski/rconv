@@ -73,7 +73,7 @@ $title = "View your Rotary Pledge";
 <body <?php body_class(); ?>>
 	<div id="page" class="hfeed">
 		<header id="branding" role="banner">
-            <img src="/images/logo.jpg" alt="Rotary Pledge" />
+            <img src="/images/logo.png" alt="Rotary Pledge" />
 		</header><!-- #branding -->		
 
 		<div id="main">
